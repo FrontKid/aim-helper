@@ -1,1 +1,1 @@
-## Train your AIM skill
+## Train your AIM skill !
