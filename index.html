@@ -15,91 +15,65 @@
   <meta name="author" content="Denys">
   <meta name="email" content="itwfrontend@gmail.com">
   <meta name="profile" content="https://github.com/FrontKid">
-
   <!-- TEMPLATE META -->
   <meta name="title" content="">
   <meta name="keywords" content="">
   <meta name="description" content="">
-
   <!--=====================================
                   META-TAG PART END
       =======================================-->
-
   <!-- FOR WEBPAGE TITLE -->
-  <title>Document</title>
-
+  <title>Aim Training</title>
   <!--=====================================
                   CSS LINK PART START
   =======================================-->
   <!-- FAVICON -->
-  <link rel="icon" href="" type="image/png">
-  <!-- FONTS -->
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
-  <!-- VENDOR -->
-
-
+  <link rel="icon" href="./img/crosshair.svg" type="image/png">
   <!-- CUSTOM -->
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/index.css">
   <!--=====================================
                   CSS LINK PART END
   =======================================-->
-
-
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
+  <div class="screen">
+    <h1>Aim Training</h1>
+    <a id="start" href="#" class="start">Start game</a>
+  </div>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Aim Training | Проект 5</title>
-  </head>
+  <div class="screen">
+    <h1>Pick a time</h1>
+    <ul id="time-list" class="time-list">
+      <li>
+        <button class="time-btn" data-time="10">
+          10 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="20">
+          20 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="30">
+          30 sec
+        </button>
+      </li>
+      <li>
+        <button class="time-btn" data-time="40">
+          40 sec
+        </button>
+      </li>
+    </ul>
+  </div>
 
-  <body>
-    <div class="screen">
-      <h1>Aim Training</h1>
-      <a id="start" href="#" class="start">Начать игру</a>
-    </div>
-
-    <div class="screen">
-      <h1>Выберите время</h1>
-      <ul id="time-list" class="time-list">
-        <li>
-          <button class="time-btn" data-time="10">
-            10 сек
-          </button>
-        </li>
-        <li>
-          <button class="time-btn" data-time="20">
-            20 сек
-          </button>
-        </li>
-        <li>
-          <button class="time-btn" data-time="30">
-            30 сек
-          </button>
-        </li>
-        <li>
-          <button class="time-btn" data-time="40">
-            40 сек
-          </button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="screen">
-      <h3>Осталось <span id="time">00:00</span></h3>
-      <div class="board" id="board"></div>
-      <button id="try-again" class="screen__reapet hide">Try again</button>
-    </div>
-  </body>
-
-  </html>
+  <div class="screen">
+    <h3>Time left: <span id="time">00:00</span></h3>
+    <div class="board" id="board"></div>
+    <button id="try-again" class="screen__reapet hide">Try again</button>
+  </div>
 
   <script src="/script/main.js"></script>
 </body>
